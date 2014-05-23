@@ -1,0 +1,18 @@
+{
+    "appKeys": {},
+    "versionLabel": "1.0",
+    "versionCode": 1,
+    "shortName": "CSButtonClick",
+    "companyName": "csantana23@gmail.com",
+    "watchapp": {
+        "watchface": false
+    },
+    "longName": "CSButtonClick",
+    "resources": {
+        "media": []
+    },
+    "uuid": "302c39db-9bce-4be1-a3e3-1e84ba7cc354",
+    "capabilities": [
+        ""
+    ]
+}
