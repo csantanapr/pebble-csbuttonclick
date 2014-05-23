@@ -4,15 +4,15 @@ static Window *window;
 static TextLayer *text_layer;
 
 static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
-  text_layer_set_text(text_layer, "Select");
+  text_layer_set_text(text_layer, "Select-Selecciona");
 }
 
 static void up_click_handler(ClickRecognizerRef recognizer, void *context) {
-  text_layer_set_text(text_layer, "Up");
+  text_layer_set_text(text_layer, "Up-Arriba");
 }
 
 static void down_click_handler(ClickRecognizerRef recognizer, void *context) {
-  text_layer_set_text(text_layer, "Down");
+  text_layer_set_text(text_layer, "Down-Abajo");
 }
 
 static void click_config_provider(void *context) {
@@ -26,7 +26,7 @@ static void window_load(Window *window) {
   GRect bounds = layer_get_bounds(window_layer);
 
   text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 20 } });
-  text_layer_set_text(text_layer, "Press a button");
+  text_layer_set_text(text_layer, "Press a button-Presiona un boton");
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
 }
